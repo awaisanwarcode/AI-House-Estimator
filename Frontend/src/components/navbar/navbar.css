@@ -1,0 +1,161 @@
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Outfit, sans-serif;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #111827, #1e293b);
+    position: fixed;
+    top: 0;
+    width: 92%;
+    border-radius: 18px;
+    z-index: 1000;
+    margin: 12px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.lft-nav {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    width: 52px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    outline: none;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #60a5fa;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover {
+    color: #60a5fa;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger */
+.humburgerIcon {
+    width: 36px;
+    height: 36px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.humburgerIcon:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Responsive Menu */
+.respons-navLink {
+    position: absolute;
+    right: 15px;
+    top: 75px;
+
+    background: #1e293b;
+    border-radius: 14px;
+
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    width: 200px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.respons-navLink li {
+    list-style: none;
+}
+
+.respons-navLink li a {
+    color: #f1f5f9;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.respons-navLink li a:hover {
+    color: #60a5fa;
+}
+
+/* MOBILE */
+@media (min-width: 200px) and (max-width: 600px) {
+
+    .humburgerIcon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+        padding: 14px 18px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 42px;
+    }
+}

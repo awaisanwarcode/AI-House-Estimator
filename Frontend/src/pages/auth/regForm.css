@@ -1,0 +1,270 @@
+.regSec {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 7rem 8%;
+    background:
+        linear-gradient(135deg,
+            #020617,
+            #0f172a,
+            #111827);
+
+    overflow: hidden;
+}
+
+
+.regLftSec {
+    flex: 1;
+    max-width: 580px;
+    color: white;
+    animation: fadeLeft 1s ease;
+}
+
+.tagLine {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: #7dd3fc;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.regLftSec h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.regLftSec p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+.regBtns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.homeBtn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(to right,
+            #0ea5e9,
+            #38bdf8);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow:
+        0 10px 30px rgba(14, 165, 233, 0.35);
+}
+
+.homeBtn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 15px 35px rgba(14, 165, 233, 0.45);
+}
+
+.regForm {
+    width: 100%;
+    max-width: 450px;
+    padding: 2.5rem;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    animation: fadeRight 1s ease;
+}
+
+.formTop h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.formTop p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.regForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.regForm input {
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.regForm input::placeholder {
+    color: #94a3b8;
+}
+
+.regForm input:focus {
+    border-color: #38bdf8;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow:
+        0 0 0 4px rgba(56, 189, 248, 0.15),
+        0 0 18px rgba(56, 189, 248, 0.2);
+}
+
+.notificationDiv {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.error {
+    background: rgba(248, 113, 113, 0.15);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    color: #f87171;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+}
+
+.success {
+    background: rgba(113, 248, 133, 0.15);
+    border: 1px solid rgba(113, 248, 133, 0.25);
+    color: #34d399;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(to right,
+            #06b6d4,
+            #38bdf8);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+.loginText {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.loginText span {
+    color: #38bdf8;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.loginText span:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 950px) {
+
+    .regSec {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding: 5rem 1.5rem;
+    }
+
+    .regLftSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regLftSec h1 {
+        font-size: 3rem;
+    }
+
+    .regBtns {
+        justify-content: center;
+    }
+
+    .regForm {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .regLftSec h1 {
+        font-size: 2.3rem;
+    }
+
+    .regForm {
+        padding: 1.5rem;
+        border-radius: 22px;
+    }
+
+    .homeBtn,
+    .submitBtn {
+        width: 100%;
+    }
+}

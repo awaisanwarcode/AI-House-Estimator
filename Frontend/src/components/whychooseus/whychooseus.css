@@ -1,0 +1,48 @@
+.whyChoose{
+    padding:100px 8%;
+}
+
+.statsContainer{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.statCard{
+    background:white;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    border:1px solid #e5e7eb;
+    transition:.3s ease;
+}
+
+.statCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.statCard h1{
+    font-size:3rem;
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+.statCard h3{
+    margin-bottom:12px;
+    color:#111827;
+}
+
+.statCard p{
+    color:#6b7280;
+    line-height:1.7;
+}
+
+@media(max-width:900px){
+
+    .statsContainer{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,181 @@
+.estimator-container {
+    display: flex;
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
+.form-section {
+    flex: 1;
+    padding: 50px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.result-section {
+    flex: 1;
+    padding: 50px;
+    max-height: 180vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #f9fafc, #eef1f6);
+}
+
+.result-section::-webkit-scrollbar{
+    display: none;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #444;
+    gap: 6px;
+}
+
+input,
+select,
+textarea {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s ease;
+    background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    resize: none;
+}
+
+.style-box {
+    margin-top: 10px;
+}
+
+.style-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.style-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+    background: #fff;
+}
+
+.chip:hover {
+    transform: translateY(-2px);
+}
+
+.active {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background-color: #000;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.summaryCard {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.summaryCard h4 {
+    margin-bottom: 0.5rem;
+    color: #cbd5e1;
+}
+
+.warningBox {
+    background: #451a03;
+    border: 1px solid orange;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.detailSection , .budgetCard {
+    margin-top: 1.5rem;
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.detailSection ul {
+    padding-left: 1rem;
+}
+
+.detailSection li {
+    margin: 0.5rem 0;
+}
+
+.feasibilityBox {
+    margin-top: 1.5rem;
+    background: #1e1b4b;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .estimator-container {
+        flex-direction: column;
+    }
+
+    .form-section,
+    .result-section {
+        padding: 25px;
+    }
+}

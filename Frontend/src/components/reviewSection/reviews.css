@@ -1,0 +1,174 @@
+.testimonialSection {
+    padding: 100px 8%;
+    background: #f8fafc;
+}
+
+.testimonialGrid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonialCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    transition: .3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonialCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+}
+
+.stars {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonialCard p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.userInfo h4 {
+    margin-bottom: 4px;
+}
+
+.userInfo span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.reviewForm {
+    width: 92%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 100%;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ececec;
+}
+
+.formHeading {
+    font-size: 2.2rem;
+    color: #111827;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formSubHeading {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 20px;
+}
+
+.inputGroup input,
+.form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 14px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+    background: #f9fafb;
+}
+
+.inputGroup input:focus,
+.form textarea:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 4px rgba(37, 99, 235, 0.1);
+}
+
+.form textarea {
+    resize: none;
+    line-height: 1.7;
+}
+
+.form button {
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+@media(max-width:900px) {
+    .testimonialGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width:200px) and (max-width:340px) {
+    .testimonialCard {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inputGroup {
+        flex-direction: column;
+    }
+
+    .formContainer {
+        padding: 30px 20px;
+    }
+
+    .formHeading {
+        font-size: 1.8rem;
+    }
+}

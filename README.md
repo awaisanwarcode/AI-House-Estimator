@@ -37,14 +37,10 @@ PORT=3000
 FRONTEND_URL="http://localhost:5173"
 
 # AI Integrations
-OPENAI_API_KEY="your_openai_api_key_here"
 GEMINI_API_KEY="your_gemini_api_key_here"
-NAME="Gemini API Key"
-PROJECTNAME="projects/your_project_name"
-PROJECTNO=your_project_number
 
 # Database
-DB_URL="mongodb://localhost:27017/AI_HouseEstimator"
+DB_URL="your_DB_Url"
 
 # Email / SMTP Settings (for nodemailer)
 SMTP_HOST=smtp.gmail.com
